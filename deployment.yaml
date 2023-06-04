@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: brainstrom/node-app-k21
+          image: brainstrom/node-app-k21:1.0
           ports:
             - containerPort: 3000
 

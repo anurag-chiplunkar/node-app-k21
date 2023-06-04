@@ -1,4 +1,4 @@
-const express = require('require');
+const express = require('express');
 var swStats = require("swagger-stats");
 const app = express();
 
