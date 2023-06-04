@@ -11,8 +11,8 @@ spec:
       app: api
   template:
     metadata:
-    labels:
-      app: api
+      labels:
+        app: api
     spec:
       containers:
         - name: api
@@ -28,12 +28,12 @@ metadata:
   labels: 
     job: node-api
     app: api
-  spec:
-    type: NodePort
-    selector:
-      app: api
-    ports:
-      - name: web
-        protocol: TCP
-        port: 3000
-        targetPort: 3000
+spec:
+  type: NodePort
+  selector:
+    app: api
+  ports:
+    - name: web
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
